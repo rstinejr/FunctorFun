@@ -5,6 +5,8 @@
 
 #include <Functor.hpp>
 
+using namespace ffn;
+
 BOOST_AUTO_TEST_CASE(ctor_dtor)
 {
     {
