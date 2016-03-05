@@ -49,7 +49,7 @@ int is '31416'
 Done.
 ```
 
-## Why This Works
+## How and Why This Works
 
 This project includes a class *Wrapper* that has a single method, *kick_off()*, which returns an instance of *Functor*.
 
