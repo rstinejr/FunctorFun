@@ -3,7 +3,8 @@ Explore the fascinating syntax of C++ functors, as illustrated by the boost::pro
 
 ## Intro
 
-I recently worked on a C++ project in which the boost::program_options library is used to parse a config file.  Great stuff: do the messy work in a well-vetted library, etc.  But I found myself baffled by the what that options are described.  From the [Boost doc on program options](http://www.boost.org/doc/libs/1_60_0/doc/html/program_options/tutorial.html):
+I recently worked on a C++ project in which the boost::program_options library is used to parse a config file.  Great stuff: have
+a well-vetted library do messy, error-prone work for you, *etc*.  But I found myself baffled by the what that options are described.  From the [Boost doc on program options](http://www.boost.org/doc/libs/1_60_0/doc/html/program_options/tutorial.html):
 
 ```
 int opt;
