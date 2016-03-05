@@ -47,3 +47,32 @@ str is 'hello world'
 int is '31416'
 Done.
 ```
+
+## Why This Works
+
+This project includes a class *Wrapper* that has a single method, *kick_off()*, which returns an instance of *Functor*.
+
+The class *Functor* has two functor operator metods defined.  One of these takes a string as an argument, the other an int. Each returns a reference to its instance.
+
+In the last line of this code snippet from *main.cpp*:
+
+```
+    ffn::Wrapper wrapper;
+    std::string msg("hello world");
+    wrapper.kick_off()(msg)(31416);
+```
+
+...method *kick_off()* returns an instance of *Functor*, which executes its *operator(string)* member function to display *msg* and returns a reference to itself, which executes its *operator(int)* member function and returns a reference to itself, which is ignored.
+
+## The Chaining Idiom
+
+A member function that returns a refernce to its instance is a coding idiom known as *chaining*.  No doubt the most
+well-known example of chaning is the *<<* operator in *<iostream>*.  It is also used in by the *append* method of Java's *StringBuffer*.
+
+The main advantage of chaining is that it greatly reduce code clutter, and allow elegant expressions of the intent of the 
+operation.
+
+
+
+
+
