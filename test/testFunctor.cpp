@@ -15,3 +15,18 @@ BOOST_AUTO_TEST_CASE(ctor_dtor)
 
     BOOST_CHECK(true);
 }
+
+BOOST_AUTO_TEST_CASE(str_oper)
+{
+    Functor func;
+    std::string msg1("hello"),
+                msg2("world");
+
+    Functor& f2 = func(msg1);
+
+    f2(msg2);
+
+    func(msg1)(msg2);
+
+    BOOST_CHECK(true);
+}
