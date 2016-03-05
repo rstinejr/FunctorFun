@@ -63,7 +63,10 @@ In the last line of this code snippet from *main.cpp*:
     wrapper.kick_off()(msg)(31416);
 ```
 
-...method *kick_off()* returns an instance of *Functor*, which executes its *operator(string)* member function to display *msg* and returns a reference to itself, which executes its *operator(int)* member function and returns a reference to itself, which is ignored.
+1. method *kick_off()* returns an instance of *Functor*, 
+2. ...which executes its *operator(string)* member function to display *msg* and returns a reference to itself, 
+3. ...which executes its *operator(int)* member function and returns a reference to itself, 
+4. ...which is ignored.
 
 ## The Chaining Idiom
 
