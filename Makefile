@@ -5,7 +5,7 @@ MY_BIN_LDFLAGS = -lstdc++ -lrt
 
 PGM  = main
 INCS = includes
-LIB_OBJS = objs/Functor.o
+LIB_OBJS = objs/Wrapper.o objs/Functor.o
 OBJS = main.o
 SRC  = src
 
@@ -21,6 +21,9 @@ objs:
 
 objs/Functor.o:	objs $(SRC)/Functor.cpp $(INCS)/Functor.hpp
 	g++ -Wall -g $(MY_BIN_CFLAGS) -I$(INCS) -c $(SRC)/Functor.cpp -o $@
+	
+objs/Wrapper.o:	objs $(SRC)/Wrapper.cpp $(INCS)/Wrapper.hpp
+	g++ -Wall -g $(MY_BIN_CFLAGS) -I$(INCS) -c $(SRC)/Wrapper.cpp -o $@
 	
 $(PGM):	$(OBJS) $(LIB_OBJS)
 	g++ -o $@ $(OBJS) $(LIB_OBJS) $(MY_BIN_LDFLAGS)

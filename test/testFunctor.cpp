@@ -3,7 +3,7 @@
 
 #include <boost/test/unit_test.hpp>
 
-#include <Functor.hpp>
+#include <Wrapper.hpp>
 
 using namespace ffn;
 
@@ -40,6 +40,18 @@ BOOST_AUTO_TEST_CASE(int_oper)
     f2(21718);
 
     func(31416)(21718);
+
+    BOOST_CHECK(true);
+}
+
+BOOST_AUTO_TEST_CASE(wrapper)
+{
+    Wrapper wrp;
+
+    std::string msg1("mop bop");
+    std::string msg2("a loo la");
+
+    wrp.kick_off()(msg1)(msg2)(86);
 
     BOOST_CHECK(true);
 }
