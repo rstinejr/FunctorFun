@@ -18,7 +18,7 @@ desc.add_options()
 ;
 ```
 
-Note that this is not a file fed to a preprocessor, but instead legitimate C++ code.  And I could not figure out how this could possible compile -- or even the order in which operands are analyzed.
+Note that this is not a file fed to a preprocessor, but instead legitimate C++ code.  And I could not figure out how this could possible compile -- or even the order in which operands are analyzed. Heck, it looks more like LISP than C++.
 
 Thankfully, Google gave me an (explanation from the Stack Overflow forum)[http://www.boost.org/doc/libs/1_60_0/doc/html/program_options/tutorial.html].
 
