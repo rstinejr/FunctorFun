@@ -24,4 +24,26 @@ Thankfully, Google gave me an [explanation from the Stack Overflow forum](http:/
 
 In this project, I attempt to replicate some of the functor behavior shown by the Boost library.
 
+## Building
 
+I developed this project on 64-bit Linux Mint 17.2.
+
+The compiler was g++ (Ubuntu 4.9.3-8ubuntu2~14.04) 4.9.3.
+
+The test project assumes that the Boost Unit Test Framework is installed on your system.
+
+After cloning the project, you can build, run, and test it using *make*:
+
+```
+make clean run test
+```
+
+The executable created by this project is called *main*.  When you execute main, the expected output is:
+
+```
+$ ./main
+Let the Functor Fun begin!
+str is 'hello world'
+int is '31416'
+Done.
+```
