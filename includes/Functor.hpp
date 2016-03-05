@@ -10,6 +10,7 @@ class Functor
 public:
     Functor();
     Functor& operator() (std::string& sval);
+    Functor& operator() (int ival);
 private:
 };
 }

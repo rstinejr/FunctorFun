@@ -30,3 +30,16 @@ BOOST_AUTO_TEST_CASE(str_oper)
 
     BOOST_CHECK(true);
 }
+
+BOOST_AUTO_TEST_CASE(int_oper)
+{
+    Functor func;
+
+    Functor& f2 = func(31416);
+
+    f2(21718);
+
+    func(31416)(21718);
+
+    BOOST_CHECK(true);
+}

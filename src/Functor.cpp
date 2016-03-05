@@ -14,3 +14,9 @@ Functor& Functor::operator() (std::string& sval)
     return *this;
 }
     
+Functor& Functor::operator() (int ival)
+{
+    std::cout << "int is '" << ival << "'" << std::endl;
+
+    return *this;
+}
