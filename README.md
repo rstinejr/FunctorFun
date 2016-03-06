@@ -71,7 +71,7 @@ In the last line of this code snippet from *main.cpp*:
 ## The Chaining Idiom
 
 A member function that returns a refernce to its instance is a coding idiom known as *chaining*.  No doubt the most
-well-known example of chaning is the ```<<``` operator in ```<iostream>```.  It is also used in by the *append* method of Java's *StringBuffer*.
+well-known example of chaning is the ```<<``` operator in ```<iostream>```.  It is also used in by the *append* method of Java's *StringBuilder*.
 
 The main advantage of chaining is that it greatly reduces code clutter, and allows elegant expressions of the intent of the 
 operation.
